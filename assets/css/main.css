@@ -1,0 +1,61 @@
+@import './base.css';
+
+.active {
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1.65px 8.24px 0px #0000001A;
+    padding: 20px 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header .logo a {
+    color: var(--maincolor);
+}
+
+.header .logo img {
+    width: 40px;
+}
+
+.header .nav a {
+    color: #101928;
+}
+
+.header .auth a {
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.header .auth a:first-of-type {
+    border: 1px solid var(--maincolor);
+    
+    color: var(--maincolor);
+}
+
+.header .auth a:last-of-type {
+    background-color: var(--maincolor);
+    color: #fff;
+
+}
+
+@media (max-width: 992px) {
+    .header .nav {
+        display: none;
+    }
+}
